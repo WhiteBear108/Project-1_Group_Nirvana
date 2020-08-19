@@ -1,0 +1,158 @@
+body{
+    font-size: 16px;
+    font-family: 'Roboto', sans-serif;
+    min-width: 250px;
+}
+
+/*header*/
+
+.header{
+    background: #1d1c1c;
+    padding: 0.5em 0;
+    color: #ffffff;
+}
+
+.container__header{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.name__header{
+    margin: 0.5em 2.5em 0.5em 0;
+}
+
+.name__header h1{
+    text-align: center;
+}
+
+.main__header{
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none; 
+}
+
+@media(min-width: 280px){
+    .main__header > li+li{
+        margin-left: 1.5em;  
+    }
+}
+
+.main__header > li > a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.main__header > li > a:hover{
+    color: #0d851d;
+}
+
+@media(max-width: 550px){
+    .name__header{
+        margin: 0.5em 2.5em;
+    }   
+    .main__header{
+        display: flex;
+        justify-content: center;
+        width: 450px;
+    }
+}
+
+@media(max-width: 450px){
+    .name__header{
+        margin: 0.5em 2.5em;
+    }   
+    .main__header{
+        display: flex;
+        justify-content: center;
+        width: 350px;
+    }
+}
+
+@media(max-width: 350px){
+    .name__header{
+        margin: 0.5em 1.5em;
+    }   
+    .main__header{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}
+
+@media(max-width: 279px){
+    .main__header > li{
+        margin: 0.2em 0.5em;  
+    }
+    .main__header{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+/*content*/
+
+.content{
+    background: #292727;
+    color: #ffffff;
+}
+
+.container__content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.name_content{
+    font-size: 1.5em;
+}
+
+.name_content > h2{
+    text-align: center;
+    margin: 0.5em 0 0 0;
+}
+
+.text__content{
+    margin: 1.5em 0;
+}
+
+.text__content > p{
+    margin: 0.5em 2.0em;
+}
+
+.text__content > h2{
+    text-align: center;
+    margin: 0.5em;
+}
+
+.container-content__img{
+    margin: 0 2.0em;
+    max-width: 400px;
+}
+
+.content__img > a > img{
+    width: 100%;
+}
+
+.list__content > li{
+    margin: 1.5em 2.0em;
+}
+
+/*footer*/
+
+.footer{
+    background: #1d1c1c;
+    color: #ffffff;
+    padding: 1.0em 0;
+}
+
+.footer__container{
+    display: flex;
+    flex-direction: column;
+}
+
+.address h2{
+    text-align: center;
+}
